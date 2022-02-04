@@ -1,0 +1,304 @@
+/* Font Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+/*
+=======================
+Variables
+=======================
+*/
+
+:root {
+        --var-grey: #66E2DC;
+        --var-light-red:#FA7453;
+        --var-green-pink:#FFB964;
+        --var-off-white:#FCFAF9;
+        --var-off-black:#191826;
+        --var-h1: normal normal 700 clamp(2em, 8.5vw, 3.5em)/clamp(1.3em, 3vw, 48px) 'IBM Plex Sans', sans-serif;
+        --var-h1-tablet: normal normal 700 3.2em/1.2em 'IBM Plex Sans', sans-serif;
+        --var-h1-desktop: normal normal 700 clamp(3.2em, 15vw, 4em)/clamp(1.2em, 7vw, 1em) 'IBM Plex Sans', sans-serif;
+        --var-h2: normal normal 700 clamp(1.5em, 3.8vw, 40px)/clamp(1.2em , 3.2vw , 32px) 'IBM Plex Sans', sans-serif;
+        --var-footer: normal normal 400 16px/22px 'IBM Plex Sans', sans-serif;
+        --var-body2: normal normal 400 16px/22px 'IBM Plex Sans', sans-serif;
+}
+
+
+/*
+=======================
+Set up
+=======================
+*/
+
+html {
+        box-sizing: border-box;
+}
+
+*,*::before, *::after {
+        box-sizing: inherit;
+}
+
+body {
+        /* position: absolute; */
+        margin: 0;
+        background-image: url(/assets/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-position: 140% -10%;
+        background-size: 60%;
+}
+
+/*
+=======================
+Typography
+=======================
+*/
+
+h1 {
+  font: var(--var-h1);
+  letter-spacing: -1px;
+}
+
+h2 {
+  font: var(--var-h2);
+}
+
+h3 {
+  font: var(--var-body2);
+}
+
+p {
+  font: var(--var-body2);
+}
+
+/*
+=======================
+Layout
+=======================
+*/
+
+.background {
+  border-radius: 10px;
+}
+
+.background_black {
+  background-image: url(/assets/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-color: #191826;
+  background-size: 280px;
+  border: none;
+  margin: 0 auto;
+  height: fit-content;
+}
+
+.background_orange {
+  background-color: #FA7453;
+  color: #FCFAF9;
+  transform: translate(0, -10%);
+  padding: 1.5rem 1rem 2.5rem;
+  width: min(100%, 399px);
+  margin: 0 auto;
+}
+
+.background__tablet-desktop_image {
+  display: none;
+}
+
+.button {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  padding: 1rem;
+}
+
+.button__apple {
+  background-color: #191826;
+  color: #FCFAF9;
+}
+
+.button__android {
+  margin-top: .8rem;
+}
+
+.button__logo {
+  margin-right: .5rem;
+}
+
+.container {
+  display: grid;
+  width: min(100%, 680px);
+  margin: 3rem auto;
+}
+
+.footer {
+  margin: 0 auto;
+  width: min(86%, 1100px);
+}
+
+.footer__bold {
+  font-weight: 700;
+}
+
+.footer__media-widgets {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footer__text {
+  font: var(--var-footer);
+  letter-spacing: .5px;
+  white-space: pre-line;
+  margin-bottom: 3rem;
+}
+
+.footer__widget-item {
+  width: 18px;
+}
+
+.hero {
+  width: min(100%, 825px);
+}
+
+.hero__text {
+  white-space: pre-line;
+  /* outline: 2px solid black; */
+}
+
+.hero__description {
+  padding-bottom: 6rem;
+  width: min(100%, 825px);
+}
+
+.main-content {
+  margin: 0 auto;
+}
+
+.phone {
+  display: block;
+  width: min(56%, 270px);
+  transform: translate(0, -90px);
+  margin: 0 auto;
+}
+
+.text-content {
+  width: min(80%, 1110px);
+  margin: 0 auto;
+}
+
+.text-content__price {
+  display: flex;
+  align-items: center;
+}
+
+.text-content__price_big {
+  font: var(--var-h1);
+  margin-right: 0.8rem;
+}
+
+.text-content__logo {
+  width: 40%;
+}
+
+@media screen and (min-width:600px) {
+  .background_orange {
+    margin: 0 8% 0 auto;
+    transform: translate(0, -350px);
+  }
+  .background__tablet-desktop_image {
+    position: absolute;
+    display: block;
+    top: -28px;
+    right: -20px;
+    width: clamp(210px, 30vw, 240px);
+  }
+  body {
+    background-image: url(/assets/bg-main-tablet.png);
+    background-repeat: no-repeat;
+    background-position: -100px -100px;
+    background-size: 125%;
+  }
+  .footer {
+    transform: translate(0, -300px);
+  }
+  .footer__text {
+    width: min(85%, 400px);
+  }
+  .hero__description {
+    padding-bottom: 10rem;
+  }
+  .hero__text {
+    font: var(--var-h1-tablet);
+    width: min(100%, 700px);
+  }
+  .phone {
+    margin: 0 auto 0 8%;
+  }
+}
+
+@media screen and (min-width:650px) {
+  .background_black {
+    background-size: clamp(280px, 20rem, 350px);
+  }
+  .background_orange {
+    transform: translate(0, -350px);
+  }
+  body {
+    background-position: -100px -120px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .container {
+    display: grid;
+    width: min(100%, 1100px);
+    margin: 3rem auto 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #FA7453; */
+    margin: 0 auto -200px;
+    padding: 0;
+    height: fit-content;
+  }
+  .phone {
+    width: min(48%, 312px);
+  }
+}
+
+@media screen and (min-width:750px) {
+  .background_orange {
+    transform: translate(0, -450px);
+  }
+  .footer {
+    margin: -150px auto -200px;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  body {
+    background-size: 125%;
+    background-position: -225px -250px;
+  }
+  .hero__text {
+    white-space: initial;
+  }
+  .text-content__logo {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .hero__text {
+    font: var(--var-h1-desktop);
+  }
+  .text-content__logo {
+    margin-bottom: 0;
+  }
+}
