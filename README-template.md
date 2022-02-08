@@ -14,9 +14,6 @@ This is a solution to the [Equalizer landing page challenge on Frontend Mentor](
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -35,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [See solution URL here](https://github.com/Lauro235/frontend-mentor-equalizer)
+- Live Site URL: [View here](https://lauro235.github.io/frontend-mentor-equalizer/)
 
 ## My process
 
@@ -47,59 +44,32 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- BEM method
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I found this project tremendously difficult. I had this idea that everything had to be completely responsive and interactive, but as I began learning about modular design, bem practice and working through this design I could see that actually the ability to reuse components is very powerful. I saw that for instance, parts of the footer moved about, but were essentially styled the same in each design. Previously I would have made the text responsively resize, but I definitely over did this and it's definitely not always necessary.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+So to sum up:
+Re-usable components are king and the BEM method is very useful for creating modular designs that incorporate re-usable components.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I'd like to continue working with images and background images. I feel very hacky when I try to get the various image components to work as desired.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'd like to become more confident with the bem method and use it to create more websites.
+
+I'd like to continue to learn more design patterns.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Responsive img html best practice](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) - Although I didn't implement the ideas in this article, at one point I was reading through and thought it might come in useful at some point later on.
+- [Embedding responsive images](https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/responsive-images/responsive.html) - Similar to the first article, I didn't feel that I need to implement the points and so I book marked it for a later point.
+- [bem documentation](https://en.bem.info/methodology/quick-start/) - I believe this is the 'official' documentation that goes through best practice for the bem method.I found it really useful and encourage others to read it when they have the time.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Lorentz Bloom](https://www.hellouniverse.stream)
+- Frontend Mentor - [@Lauro235](https://www.frontendmentor.io/profile/Lauro235)
+- Twitter - [@Lauro235](https://twitter.com/Lauro235)
