@@ -80,7 +80,7 @@ Layout
 }
 
 .background_black {
-  background-image: url(/assets/bg-pattern-2.svg);
+  background-image: url(assets/bg-pattern-2.svg);
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-color: #191826;
