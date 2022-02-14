@@ -202,7 +202,7 @@ Layout
 }
 
 .text-content__logo {
-  width: 40%;
+  width: min(80%, 120px);
 }
 
 @media screen and (min-width:600px) {
@@ -226,6 +226,10 @@ Layout
   .footer {
     transform: translate(0, -300px);
   }
+.footer__logo {
+  width: min(80%, 120px);
+}
+
   .footer__text {
     width: min(85%, 400px);
   }
@@ -295,10 +299,18 @@ Layout
 }
 
 @media screen and (min-width:1200px) {
+  .footer__logo {
+    align-self: center;
+    margin-right: 4rem;
+  }
+  .footer__text-block {
+    display: flex;
+  }
   .hero__text {
     font: var(--var-h1-desktop);
   }
   .text-content__logo {
     margin-bottom: 0;
   }
+
 }
