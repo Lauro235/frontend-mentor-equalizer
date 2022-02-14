@@ -40,7 +40,7 @@ html {
 body {
         /* position: absolute; */
         margin: 0;
-        background-image: url(/assets/bg-main-mobile.png);
+        background-image: url(assets/bg-main-mobile.png);
         background-repeat: no-repeat;
         background-position: 140% -10%;
         background-size: 60%;
@@ -218,7 +218,7 @@ Layout
     width: clamp(210px, 30vw, 240px);
   }
   body {
-    background-image: url(/assets/bg-main-tablet.png);
+    background-image: url(assets/bg-main-tablet.png);
     background-repeat: no-repeat;
     background-position: -100px -100px;
     background-size: 125%;
